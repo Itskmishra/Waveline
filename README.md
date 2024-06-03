@@ -46,3 +46,6 @@ I have tried designing a visually stunning and consistent user interface using T
 
 
 I followed a component-based approach, creating reusable and modular components adhering to best practices like prop-typing, separation of concerns, and consistent naming conventions. This ensured maintainability and scalability throughout the development process.
+
+## Reference
+Figma: https://www.figma.com/community/file/1145991068621514311/app-landing-page-finance-bank-money
