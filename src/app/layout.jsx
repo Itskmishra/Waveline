@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Financio",
+  title: "Waveline",
   description:
     "A landing page for a web application. Designed with next js by skmishra.",
 };
