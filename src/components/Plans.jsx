@@ -6,16 +6,16 @@ import DottedEffect from "./reusable-ui/dotted-effect";
 
 const Plans = ({ data }) => {
   return (
-    <div class="container py-10" id="pricing">
+    <div className="container py-10" id="pricing">
       {/* header */}
-      <div class="flex flex-wrap items-center justify-center -mx-4">
-        <div class="w-full px-4">
-          <div class="text-center mx-auto mb-5 max-w-[510px]">
-            <span class="font-semibold text-lg text-primary mb-2 block">
+      <div className="flex flex-wrap items-center justify-center -mx-4">
+        <div className="w-full px-4">
+          <div className="text-center mx-auto mb-5 max-w-[510px]">
+            <span className="font-semibold text-lg text-primary mb-2 block">
               Pricing Table
             </span>
             <h2
-              class="
+              className="
                   font-bold
                   text-3xl
                   sm:text-4xl
@@ -26,26 +26,29 @@ const Plans = ({ data }) => {
             >
               Our Pricing Plan
             </h2>
-            <p class="text-base text-body-color">
+            <p className="text-base text-body-color">
               There are many variations of passages of Lorem Ipsum available but
               the majority have suffered alteration in some form.
             </p>
           </div>
         </div>
-        <div class="text-center mb-10">
-          <span class="inline-block w-1 h-1 rounded-full bg-red-500 ml-1"></span>
-          <span class="inline-block w-3 h-1 rounded-full bg-red-500 ml-1"></span>
-          <span class="inline-block w-40 h-1 rounded-full bg-red-500"></span>
-          <span class="inline-block w-3 h-1 rounded-full bg-red-500 ml-1"></span>
-          <span class="inline-block w-1 h-1 rounded-full bg-red-500 ml-1"></span>
+        <div className="text-center mb-10">
+          <span className="inline-block w-1 h-1 rounded-full bg-red-500 ml-1"></span>
+          <span className="inline-block w-3 h-1 rounded-full bg-red-500 ml-1"></span>
+          <span className="inline-block w-40 h-1 rounded-full bg-red-500"></span>
+          <span className="inline-block w-3 h-1 rounded-full bg-red-500 ml-1"></span>
+          <span className="inline-block w-1 h-1 rounded-full bg-red-500 ml-1"></span>
         </div>
       </div>
       {/* pricing */}
-      <div class="flex flex-wrap justify-center -mx-4">
+      <div className="flex flex-wrap justify-center -mx-4">
         {data.map((plan) => (
-          <div class="w-full md:w-1/2 lg:w-1/3 px-4 h-full hover:scale-105 transition-all duration-300 delay-100">
+          <div
+            className="w-full md:w-1/2 lg:w-1/3 px-4 h-full hover:scale-105 transition-all duration-300 delay-100"
+            key={plan.plan}
+          >
             <div
-              class="
+              className="
                bg-white
                rounded-xl
                relative
@@ -64,14 +67,14 @@ const Plans = ({ data }) => {
                "
             >
               <div className="">
-                <span class="text-primary font-semibold text-lg block mb-4">
+                <span className="text-primary font-semibold text-lg block mb-4">
                   {plan.plan}
                 </span>
-                <h2 class="font-bold text-dark mb-5 text-[32px]">
+                <h2 className="font-bold text-dark mb-5 text-[32px]">
                   {plan.price}
                 </h2>
                 <p
-                  class="
+                  className="
                 text-base text-body-color
                 pb-8
                 mb-8
@@ -81,9 +84,12 @@ const Plans = ({ data }) => {
                   Perfect for using in a personal website or a client project.
                 </p>
               </div>
-              <div class="">
+              <div className="">
                 {plan.features.map((feature) => (
-                  <p class="text-base text-body-color leading-loose mb-1">
+                  <p
+                    className="text-base text-body-color leading-loose mb-1"
+                    key={feature}
+                  >
                     {feature}
                   </p>
                 ))}

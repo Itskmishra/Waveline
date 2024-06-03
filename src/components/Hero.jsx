@@ -6,7 +6,6 @@ import { ArrowLeft, ArrowRight, Heading } from "lucide-react";
 import Link from "next/link";
 
 const HeroContent = ({ headline, subheadline, ctaBtn }) => {
-  console.log(ctaBtn);
   return (
     <div className="mx-auto max-w-2xl py-24 sm:py-28 lg:py-32">
       {/* Banner  */}
@@ -28,7 +27,7 @@ const HeroContent = ({ headline, subheadline, ctaBtn }) => {
         {/* Action button's */}
         <div className="mt-10 flex items-center justify-center gap-x-6">
           {ctaBtn?.map((btn) => (
-            <Button size={"sm"} variant={btn.variant}>
+            <Button size={"sm"} variant={btn.variant} key={btn.text}>
               {btn.text}
             </Button>
           ))}

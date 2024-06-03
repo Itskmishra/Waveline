@@ -137,10 +137,10 @@ const Footer = () => {
     ],
   };
   return (
-    <footer class="relative">
+    <footer className="relative">
       <TopLeftEffect />
-      <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             {/* Logo and description */}
             <div className="flex md:flex-1">
@@ -152,15 +152,15 @@ const Footer = () => {
                 <span className="text-xlf font-bold">Financio</span>
               </Link>
             </div>
-            <p class="max-w-xs mt-4 text-sm text-gray-600">
+            <p className="max-w-xs mt-4 text-sm text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
               accusantium.
             </p>
 
             {/* SOcial */}
-            <div class="flex mt-8 space-x-6 text-gray-600">
+            <div className="flex mt-8 space-x-6 text-gray-600">
               {socialLinks.map((link) => (
-                <Link href={link.link} id={link.id}>
+                <Link href={link.link} key={link.id}>
                   <link.icon className=" text-zinc-700 hover:fill-red-500" />
                 </Link>
               ))}
@@ -197,9 +197,9 @@ const Footer = () => {
             </div>
           </div>
           {/* Usefull links */}
-          <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <p class="font-medium">Compnay</p>
+              <p className="font-medium">Compnay</p>
               <div className="flex flex-col gap-2 mt-5">
                 {usefulLinks.Company.map((link) => (
                   <Link
@@ -213,7 +213,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <p class="font-medium">Helpful Links</p>
+              <p className="font-medium">Helpful Links</p>
               <div className="flex flex-col gap-2 mt-5">
                 {usefulLinks.HelpfulLinks.map((link) => (
                   <Link
@@ -227,7 +227,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <p class="font-medium">Legal</p>
+              <p className="font-medium">Legal</p>
               <div className="flex flex-col gap-2 mt-5">
                 {usefulLinks.Legal.map((link) => (
                   <Link
@@ -241,7 +241,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <p class="font-medium">Support</p>
+              <p className="font-medium">Support</p>
               <div className="flex flex-col gap-2 mt-5">
                 {usefulLinks.Support.map((link) => (
                   <Link
@@ -257,7 +257,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full h-[1px] bg-zinc-400 my-12"></div>
-        <p class="mt-8 text-xs text-gray-800">© 2024 Financio</p>
+        <p className="mt-8 text-xs text-gray-800">© 2024 Financio</p>
       </div>
     </footer>
   );
