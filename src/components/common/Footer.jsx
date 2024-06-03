@@ -149,7 +149,7 @@ const Footer = () => {
                 className="-m-1.5 p-1.5 flex items-center justify-center gap-1"
               >
                 <img className="h-8 w-8" src="icon.png" alt="logo" />
-                <span className="text-xlf font-bold">Financio</span>
+                <span className="text-xlf font-bold">Waveline</span>
               </Link>
             </div>
             <p className="max-w-xs mt-4 text-sm text-gray-600">
